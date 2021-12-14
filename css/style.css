@@ -1,0 +1,379 @@
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+  src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+ }
+ 
+ @font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 700;
+  src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+  src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+ }
+ 
+ @font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 300;
+  src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+  src: url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+ }
+
+*{margin: 0;padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: #000;}
+body{
+  font-family: 'NanumBarunGothic';
+  font-size: 14px;
+  line-height: 24px;
+  color: #000;
+}
+
+/*헤더*/
+
+#top{
+  height: 100px;
+}
+.top_in{
+  width: 1320px;
+  margin: 20px auto;
+  font-family: 'Footlight MT Light';
+}
+.top_in b{
+  float: left;
+}
+.top_in> .nav{
+  float: right;
+}
+.top_in> .nav> li{
+  float: left;
+}
+.top_in> .nav> li> a{
+  font-size: 24.11px;
+  display: block;
+  padding: 40px 20px 36px 20px;
+}
+.top_in> .nav> li> a:hover{
+  color: #a8a8a8;
+}
+/*서브메뉴*/
+.sub li a{
+  display: block;
+  padding: 20px 0;
+  color: #590a11;
+  background-color: #fff;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  border-top: solid 1.5px rgba(255, 255, 255, 0.5);
+  border-bottom: solid 1.5px rgba(0, 0, 0, 0.5);
+}
+.sub li a:hover{
+  background-color: #000;
+  color: #fff;
+}
+.sub{
+  width: 100%;
+  display: none;
+}
+.nav li:hover .sub{
+  display: block;
+}
+
+/*메인배너*/
+
+#bm{
+  background: url(../images/m_1.jpg)no-repeat center top;
+  width: 100%;
+  height: 806px;
+  animation: bmimg 15s ease-in-out infinite;
+}
+@keyframes bmimg{
+  0%{background: url(../images/m_1.jpg)no-repeat center top;}
+  20%{background: url(../images/m_1.jpg)no-repeat center top;}
+  25%{background: url(../images/m_2.jpg) no-repeat center top;}
+  45%{background: url(../images/m_2.jpg) no-repeat center top;}
+  50%{background: url(../images/m_3.jpg) no-repeat center top;}
+  65%{background: url(../images/m_3.jpg) no-repeat center top;}
+  75%{background: url(../images/m_4.jpg) no-repeat center top;}
+  95%{background: url(../images/m_4.jpg) no-repeat center top;}
+  100%{background: url(../images/m_1.jpg) no-repeat center top;}
+}
+
+/*버튼*/
+.Button{
+  height: 426px;
+}
+.Button ul{
+  background-color: #000;
+  height: 426px;
+}
+.Button ul li{
+  float: left;
+  width: 33.33%;
+  height: 426px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 130px;
+  opacity: 0.7;
+}
+.Button ul li:nth-child(1){
+  background: url(../images/Button_1.jpg) no-repeat;
+  background-size: cover;
+}
+.Button ul li:nth-child(2){
+  background: url(../images/Button_2.jpg) no-repeat;
+  background-size: cover;
+}
+.Button ul li:nth-child(3){
+  background: url(../images/Button_3.jpg) no-repeat;
+  background-size: cover;
+}
+.Button ul li:hover{
+  opacity: 1;
+}
+
+/*컨텐츠1*/
+
+.con1{
+  height: 1020px;
+}
+.c1_in{
+  width: 1320px;
+  margin:80px auto;
+  text-align: center;
+}
+.c1_in ul li{
+  width: 50%;
+}
+.c1_in ul li:nth-child(1){
+  float: left;
+  height: 504px;
+}
+.c1_in ul li:nth-child(4){
+  height: 506px;
+}
+h2{
+  font-size: 47px;
+  line-height: 65px;
+  font-family: 'Franklin Gothic Demi';
+  padding: 40px 0 40px 0;
+}
+.c1_in ul li p{
+  font-size: 18px;
+  line-height: 30px;
+  padding-bottom: 20px;
+}
+.c1_in ul li:nth-child(2){
+  float: right;
+}
+.c1_in ul li:nth-child(3){
+  float: left;
+}
+.c1_in ul li:nth-child(4){
+  float: right;
+}
+b{
+  color: #590a11;
+}
+
+/*컨텐츠2*/
+.con2{
+  width: 1320px;
+  margin: 140px auto;
+  height: 1000px;
+}
+.con2 ul{
+  height: 950px;
+}
+.con2 h1{
+  text-align: center;
+  font-size: 47px;
+  font-weight: bold;
+  line-height: 60px;
+  font-family: 'Franklin Gothic Demi';
+  padding-bottom: 30px;
+}
+.con2 ul li:nth-child(2){
+  float: left;
+}
+.con2 ul li:nth-child(3){
+  float: right;
+}
+.con2 ul li:nth-child(4){
+  float: left;
+}
+.con2 ul li:nth-child(5){
+  float: right;
+}
+.con2 p{
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  padding-top: 30px;
+}
+.con2 ul li{
+  overflow: hidden;
+  position: relative;
+}
+.con2 .hover{
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;/*투명도 완전히 투명*/
+  transition: all 1s;
+  color: #fff;
+  padding-top: 180px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.con2 ul li img{
+  display: block;
+  transition: all 2s;
+}
+ul li:hover .hover{
+  opacity: 1;
+}
+.con2 ul li:hover img{
+  transform: scale(1.2,1.2);
+}
+
+/*컨텐츠3*/
+.con3{
+  background: url(../images/steak1.jpg)no-repeat center top;
+  width: 100%;
+  height: 519px;
+  padding-bottom: 100px;
+  margin: auto;
+}
+
+/*컨텐츠4*/
+.con4{
+  width: 1320px;
+  margin: auto;
+  height: 592px;
+  background: url(../images/be_0.jpg)no-repeat
+  center top;
+  margin-top: 100px;
+  color: white;
+}
+h3{
+  font-size: 90px;
+  padding-top: 100px;
+  font-family: 'Evogria';
+  font-weight: 400;
+  text-align: center;
+}
+h4{
+  font-size: 25px;
+  padding-top: 70px;
+  text-align: center;
+}
+h5{
+  font-size: 40px;
+  font-family: 'Evogria';
+  font-weight: 400;
+  padding-top: 200px;
+}
+.con4_in .me{
+  float: left;
+  text-align: center;
+  width: 450px;
+  height: 300px;
+  background: url(../images/be_1.png)no-repeat
+  center 30%;
+}
+.con4_in p{
+  font-size: 20px;
+  padding-top: 40px; 
+}
+.con4_in .di{
+  float: left;
+  width: 400px;
+  height: 300px;
+  text-align: center;
+  background: url(../images/be_2.png)no-repeat
+  center 20%;
+}
+.con4_in .gi{
+  float: left;
+  width: 400px;
+  height: 300px;
+  text-align: center;
+  background: url(../images/be_3.png)no-repeat
+  center 20%;
+}
+
+
+/*컨텐츠5*/
+.con5{
+  width: 1320px;
+  margin: auto;
+  height: 800px;
+}
+.con5 h1{
+  text-align: center;
+  height: 44px;
+  padding-top: 150px;
+}
+
+
+/*푸터*/
+.f0{
+  background-color: rgb(152, 152, 152);
+  height: 150px;
+  border-top: 2px solid #000;
+  font-weight: bold;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+}
+.f0_in{
+  width: 1320px;
+  margin:auto;
+  padding-top: 30px;
+  line-height: 90%;
+}
+h6{
+  float: left;
+}
+.f1_l{
+  float: left;
+}
+.f1_l li{
+  float: left;
+  padding: 15px;
+}
+.f1_l li a{
+  color: rgba(0, 0, 0, 0.5);
+}
+.f1_l p{
+  padding: 10px 0 5px 15px;
+}
+.f1_r{
+  float: right;
+}
+.f1_r li{
+  padding: 5px;
+  opacity: 0.5;
+  float: left;
+  padding: 15px 5px 0 0;
+}
+.f1_r li:hover{
+  opacity: 1;
+}
+.f1_l li:hover a{
+  color: #000;
+}
+.f1_r p{
+  clear: both;
+  padding-top: 10px;
+}
+
